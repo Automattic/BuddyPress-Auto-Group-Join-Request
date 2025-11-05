@@ -103,11 +103,11 @@ function bp_auto_group_join_maybe_request( $user_id ) {
 
 		$field_value = xprofile_get_field_data( $field_id, $user_id );
 		// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
-		error_log( sprintf( 'BP Auto Group Join: Field value for user %d: %s (expected: %s)', $user_id, $field_value, $config['profile_field_value'] ) );
+		// error_log( sprintf( 'BP Auto Group Join: Field value for user %d: %s (expected: %s)', $user_id, $field_value, $config['profile_field_value'] ) );
 		
 		if ( $field_value != $config['profile_field_value'] ) {
 			// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
-			error_log( sprintf( 'BP Auto Group Join: Field value %s does not match required value %s', $field_value, $config['profile_field_value'] ) );
+			// error_log( sprintf( 'BP Auto Group Join: Field value %s does not match required value %s', $field_value, $config['profile_field_value'] ) );
 			continue;
 		}
 
